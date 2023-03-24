@@ -8,3 +8,18 @@ video {
     height: 100%;
     object-fit: cover;
 }
+
+.content {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+}
