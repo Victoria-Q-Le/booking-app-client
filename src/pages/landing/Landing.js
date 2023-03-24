@@ -1,8 +1,10 @@
 import React from 'react'
+import landingBg from "../../assets/videos/landingBG.mp4"
+
 const Landing = () => {
   return (
-    <div>
-      The Landing page
+    <div className='main'>
+      <video src={landingBg} autoPlay loop muted />
     </div>
   )
 }
