@@ -1,4 +1,5 @@
 import React from 'react'
+import "./landing.css"
 import landingBg from "../../assets/videos/landingBG.mp4"
 
 const Landing = () => {
