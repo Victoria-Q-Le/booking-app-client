@@ -9,7 +9,7 @@ const Landing = () => {
       <div className='content'>
         <h1>Welcome to Viet Nam</h1>
         <p>The only guide you'll need when planning your next trip to Viet Nam.</p>
-        <span>Less Planning, More Enjoying</span>
+        <span>Less Planning, More Traveling.</span>
       </div>
     </div>
   )
