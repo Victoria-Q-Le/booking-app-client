@@ -1,8 +1,19 @@
-import { faBed, faListCheck, faPersonWalkingLuggage, faPlane } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faCalendarDays, faListCheck, faPerson, faPersonWalkingLuggage, faPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './header.css'
+import { DateRange } from 'react-date-range'
+import { useState } from 'react'
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css';
+import {format} from "date-fns"
 
 const Header = () => {
+
+  const [date, setDate] = useState([{
+    startDate: new Date(),
+    endDate: new Date(),
+    key: 'selection'
+  }])
   return (
     <div className='header'>
       <div className='headerContainer'>
@@ -39,6 +50,39 @@ const Header = () => {
         </p>
         {/* END OF HEADER TEXT */}
 
+        {/* HEADER BUTTON */}
+        <button className='headerBtn'>Sign in / Register</button>
+        {/* END OF HEADER BUTTON */}
+
+        {/* SEARCH BOX */}
+        <div className='headerSearch'>
+          <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faBed} className='headerIcon' />
+            <input type='text' placeholder='Where are we going?'className='headerSearchInput'/>
+          </div>
+
+          <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
+            <span className='headerSearchText'>date to date</span>
+            <DateRange 
+              editableDateInputs={true} 
+              onChange={newDate => setDate([newDate.selection])} 
+              moveRangeOnFirstSelection={false}
+              ranges={date} 
+              className='date'
+            />
+          </div>
+
+          <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faPerson} className='headerIcon' />
+            <span className='headerSearchText'>2 adults 2 children 1 room</span>
+          </div>
+
+          <div className='headerSearchItem'>
+            <button className='headerBtn'>Search</button>
+          </div>
+        </div>
+        {/* END OF SEARCH BOX */}
       </div>
     </div>
   )

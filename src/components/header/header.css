@@ -2,6 +2,8 @@
     background-color: #301934;
     display: flex;
     justify-content: center;
+    position: relative;
+    color: whitesmoke;
 }
 
 .headerContainer {
@@ -30,4 +32,54 @@
 
 .headerDesc {
     margin: 20px 0 ;
+}
+
+.headerBtn {
+    background-color: #7e397c;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.headerSearch {
+    height: 30px;
+    background-color: whitesmoke;
+    border: 3px solid #d7798b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.headerIcon {
+    color: lightgray;
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+}
+
+.headerSearchText {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 50px;
 }
