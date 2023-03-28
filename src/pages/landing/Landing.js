@@ -1,7 +1,7 @@
 import React from 'react'
 import "./landing.css"
 import landingBg from "../../assets/videos/landingBG.mp4"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Landing = () => {
 
@@ -24,7 +24,7 @@ const Landing = () => {
         <p>Let's plan your next trip to Viet Nam with us</p>
       </div>
 
-      <div className='home-btn' onClick={() => {navigate('/home')}}>Explore</div>
+      <Link className='home-btn' to='home'>Explore</Link>
     </div>
   )
 }

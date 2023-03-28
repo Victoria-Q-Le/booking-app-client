@@ -18,3 +18,12 @@
     font-weight: 500;
     font-family: 'Merianda';
 }
+
+.navButton {
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #7e397c;
+}

@@ -79,7 +79,7 @@
     margin-top: 15em;
 }
 
-h1 {
+.home-text h1 {
     font-size: 4em;
     animation: fade 4s;
 }
