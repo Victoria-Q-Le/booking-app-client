@@ -4,11 +4,6 @@
     color: white;
 }
 
-@font-face {
-    font-family: "Merianda";
-    src: url("../../assets/fonts/Merianda.ttf") format('woff2');
-}
-
 .landingPage {
     width: 100%;
     height: 100vh;
@@ -18,7 +13,7 @@
     justify-content: space-around;
     position: relative;
     transition: 0.5s;
-    font-family: serif;
+    font-family: "Merianda";
 }
 
 .video-bg {
@@ -76,4 +71,21 @@
     height: 60%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    font-family: "Merianda";
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+   justify-self: flex-end; 
+   font-size: 1.5em;
+}
+
+.home-btn {
+    width: 4em;
 }

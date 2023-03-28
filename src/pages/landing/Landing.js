@@ -19,6 +19,8 @@ const Landing = () => {
         <h1>Welcome to Viet Guy</h1>
         <p>Let's plan your next trip to Viet Nam with us</p>
       </div>
+
+      <div className='home-btn'>Explore</div>
     </div>
   )
 }
