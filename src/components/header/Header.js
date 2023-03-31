@@ -10,6 +10,8 @@ import {format} from "date-fns"
 const Header = () => {
 
   const [open, setOpen] = useState(false)
+  const [openOptions, setOpenOptions] = useState(false)
+
 
   const [date, setDate] = useState([{
     startDate: new Date(),
@@ -95,8 +97,9 @@ const Header = () => {
 
           <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faPerson} className='headerIcon' />
-            <span className='headerSearchText'>{`${options.adult} adult - ${options.children} children - ${options.room} room`}
-              <div className='options'>
+            <span onClick={() => setOpenOptions(!openOptions)} className='headerSearchText'>{`${options.adult} adult - ${options.children} children - ${options.room} room`}
+            { openOptions && 
+            <div className='options'>
                 <div className='optionItem'>
                   <span className='optionText'>Adult</span>
                   <div className='optionCounter'>
@@ -124,8 +127,9 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              } 
             </span>
-          </div>
+          </div>}
 
           <div className='headerSearchItem'>
             <button className='headerBtn'>Search</button>
