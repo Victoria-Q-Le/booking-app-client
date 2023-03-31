@@ -22,6 +22,16 @@ const Header = () => {
     children: 0, 
     room: 1
   })
+
+  const handleCounter = (option, action) => {
+    setOptions(prev => {
+      return {
+        ...prev, 
+        [option]: action === "i" ? options[option] + 1 : options[option] -1,  
+      }
+    })
+  }
+  
   return (
     <div className='header'>
       <div className='headerContainer'>
@@ -90,27 +100,27 @@ const Header = () => {
                 <div className='optionItem'>
                   <span className='optionText'>Adult</span>
                   <div className='optionCounter'>
-                    <button className='optionCounterButton'>-</button>
+                    <button className='optionCounterButton' onClick={() => handleCounter("adult", "d")}>-</button>
                     <span className='optionCounterNumber'>1</span>
-                    <button className='optionCounterButton'>+</button>
+                    <button className='optionCounterButton' onClick={() => handleCounter("adult", "i")}>+</button>
                   </div>
                 </div>
 
                 <div className='optionItem'>
                   <span className='optionText'>Children</span>
                   <div className='optionCounter'>
-                    <button className='optionCounterButton'>-</button>
+                    <button className='optionCounterButton' onClick={() => handleCounter("children", "d")}>-</button>
                     <span className='optionCounterNumber'>0</span>
-                    <button className='optionCounterButton'>+</button>
+                    <button className='optionCounterButton' onClick={() => handleCounter("children", "i")}>+</button>
                   </div>
                 </div>
 
                 <div className='optionItem'>
                   <span className='optionText'>Room</span>
                   <div className='optionCounter'>
-                    <button className='optionCounterButton'>-</button>
+                    <button className='optionCounterButton' onClick={() => handleCounter("room", "d")}>-</button>
                     <span className='optionCounterNumber'>1</span>
-                    <button className='optionCounterButton'>+</button>
+                    <button className='optionCounterButton' onClick={() => handleCounter("room", "d")}>+</button>
                   </div>
                 </div>
               </div>
