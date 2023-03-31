@@ -9,6 +9,8 @@ import {format} from "date-fns"
 
 const Header = () => {
 
+  const [openDate, setOpenDate] = useState(false)
+
   const [date, setDate] = useState([{
     startDate: new Date(),
     endDate: new Date(),
@@ -63,14 +65,16 @@ const Header = () => {
 
           <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
-            <span className='headerSearchText'>{`${format(date[0].startDate,"MM/dd/yyy")} to ${format(date[0].endDate,"MM/dd/yyy")} `}</span>
-            <DateRange 
+            <span onClick={() => setOpenDate(!openDate)} className='headerSearchText'>{`${format(date[0].startDate,"MM/dd/yyy")} to ${format(date[0].endDate,"MM/dd/yyy")} `}</span>
+            {openDate && 
+              <DateRange 
               editableDateInputs={true} 
               onChange={newDate => setDate([newDate.selection])} 
               moveRangeOnFirstSelection={false}
               ranges={date} 
               className='date'
-            />
+              />
+            }
           </div>
 
           <div className='headerSearchItem'>
