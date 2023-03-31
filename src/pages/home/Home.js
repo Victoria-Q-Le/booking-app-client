@@ -1,3 +1,4 @@
+import Featured from "../../components/featured/Featured"
 import Header from "../../components/header/Header"
 import Navbar from "../../components/navBar/Navbar"
 import "./home.css"
@@ -7,7 +8,9 @@ const Home = () => {
     <div>
       <Navbar />
       <Header />
-      <div className="homeContainer"></div>
+      <div className="homeContainer">
+        <Featured />
+      </div>
     </div>
   )
 }
