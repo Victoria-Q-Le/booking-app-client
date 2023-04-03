@@ -10,6 +10,7 @@ const Home = () => {
       <Header />
       <div className="homeContainer">
         <Featured />
+        <h1 className="homrTitle"></h1>
       </div>
     </div>
   )
