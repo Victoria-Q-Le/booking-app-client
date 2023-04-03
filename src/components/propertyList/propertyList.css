@@ -10,10 +10,20 @@
    border-radius: 10px; 
    overflow: hidden;
    cursor: pointer;
+   flex: 1;
 }
 
 .pListImg {
     width: 100%;
     height: 150px;
     object-fit: cover;
+}
+
+.pListTitle>h1 {
+    font-size: 18px;
+}
+
+.pListTitle>h2 {
+    font-size: 14px;
+    font-weight: 300;
 }
