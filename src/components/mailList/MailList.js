@@ -4,7 +4,7 @@ import './mailList.css'
 const MailList = () => {
   return (
     <div>
-      This is the mailing list 
+      
     </div>
   )
 }
