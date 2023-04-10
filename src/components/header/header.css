@@ -39,7 +39,7 @@
 }
 
 .headerBtn {
-    background-color: #7e397c;
+    background-color: var(--button-bg-color);
     font-weight: 500;
     border: none;
     padding: 10px;
