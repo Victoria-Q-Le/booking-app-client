@@ -21,7 +21,7 @@ const Footer = () => {
         <ul className='fList'>
           <li className='fListItem'>Customer service help</li>
           <li className='fListItem'>Careers</li>
-          <li className='fListItem'>Privacy & cookie statement</li>
+          <li className='fListItem'>Privacy and  cookie statement</li>
           <li className='fListItem'>Terms & Conditions</li>
         </ul>
       </div>
