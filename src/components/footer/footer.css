@@ -3,3 +3,8 @@
     width: 1024px;
     font-size: 12px;
 }
+
+.fLists {
+    width: 100%;
+    display: flex;
+}
