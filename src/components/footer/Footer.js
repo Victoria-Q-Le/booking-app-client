@@ -1,4 +1,5 @@
 import React from 'react'
+import './footer.css'
 
 const Footer = () => {
   return (
@@ -21,10 +22,12 @@ const Footer = () => {
         <ul className='fList'>
           <li className='fListItem'>Customer service help</li>
           <li className='fListItem'>Careers</li>
-          <li className='fListItem'>Privacy & cookie statement</li>
+          <li className='fListItem'>Privacy &
+           cookie statement</li>
           <li className='fListItem'>Terms & Conditions</li>
         </ul>
       </div>
+      <div className='fText'>Copyright © 2023 Victoria Le</div>
     </div>
   )
 }
