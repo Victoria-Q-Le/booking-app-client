@@ -1,3 +1,10 @@
 .listContainer {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.listWrapper {
+    width: 100%;
+    max-width: 1024px;
 }
