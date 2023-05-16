@@ -1,8 +1,13 @@
 import "./list.css"
 import Navbar from '../../components/navBar/Navbar'
 import Header from '../../components/header/Header'
+import { useLocation } from "react-router-dom"
 
 const List = () => {
+
+  const location = useLocation()
+
+  console.log(location);
   return (
     <div>
         <Navbar />
@@ -11,6 +16,14 @@ const List = () => {
           <div className="listWrapper">
             <div className="listSearch">
               <h1 className="lsTitle">Search</h1>
+              <div className="lsItem">
+                <label>Destination</label>
+                <input type="text"></input>
+              </div>
+              <div className="lsItem">
+                <label>Check-in date</label>
+                <input type="text"></input>
+              </div>
             </div>
             <div className="listResult"></div>
           </div>
