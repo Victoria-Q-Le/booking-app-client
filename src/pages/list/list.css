@@ -14,6 +14,10 @@
 .listSearch { 
     flex: 1;
     background-color: var(--secondary-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
 }
 
 .lsTitle {
