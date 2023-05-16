@@ -3,6 +3,7 @@ import Navbar from '../../components/navBar/Navbar'
 import Header from '../../components/header/Header'
 import { useLocation } from "react-router-dom"
 import { useState } from "react"
+import { format } from "date-fns"
 
 const List = () => {
 
@@ -20,11 +21,11 @@ const List = () => {
               <h1 className="lsTitle">Search</h1>
               <div className="lsItem">
                 <label>Destination</label>
-                <input type="text"></input>
+                <input type="text" placeholder="destination"></input>
               </div>
               <div className="lsItem">
                 <label>Check-in date</label>
-                <input type="text"></input>
+                <span>{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
               </div>
             </div>
             <div className="listResult"></div>
