@@ -33,6 +33,35 @@ const List = () => {
                   minDate={new Date()}
                   ranges={date}/>)}
               </div>
+
+              <div className="lsItem">
+                <label>Options</label>
+                <div className="lsItemOption">
+                  <span className="lsOptionText">Min price <small>(per night)</small> </span>
+                  <input className="lsOptionInput" type="number"></input>
+                </div>
+
+                <div className="lsItemOption">
+                  <span className="lsOptionText">Max price <small>(per night)</small> </span>
+                  <input className="lsOptionInput" type="number"></input>
+                </div>
+
+                <div className="lsItemOption">
+                  <span className="lsOptionText">Adults</span>
+                  <input className="lsOptionInput" type="number" placeholder={options.adult}></input>
+                </div>
+
+                <div className="lsItemOption">
+                  <span className="lsOptionText">Children</span>
+                  <input className="lsOptionInput" type="number" placeholder={options.children}></input>
+                </div>
+
+                <div className="lsItemOption">
+                  <span className="lsOptionText">Room</span>
+                  <input className="lsOptionInput" type="number" placeholder={options.room}></input>
+                </div>
+              </div>
+              
             </div>
             <div className="listResult"></div>
           </div>
