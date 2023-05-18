@@ -4,6 +4,7 @@ import Header from '../../components/header/Header'
 import { useLocation } from "react-router-dom"
 import { useState } from "react"
 import { format } from "date-fns"
+import { DateRange } from "react-date-range"
 
 const List = () => {
 
@@ -26,6 +27,10 @@ const List = () => {
               <div className="lsItem">
                 <label>Check-in date</label>
                 <span>{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
+                <DateRange
+                  onChange={(item) => setDate([item.selection])}
+                  minDate={new Date()}
+                  ranges={date}/>
               </div>
             </div>
             <div className="listResult"></div>
