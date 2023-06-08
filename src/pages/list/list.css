@@ -51,5 +51,17 @@
     cursor: pointer;
 }
 
+.lsOptions {
+    padding: 10px;
+}
+
+.lsOptionItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+}
+
 
 .listResult { flex: 3;}
